@@ -1,14 +1,29 @@
-import React from 'react';
-import { Row, Col, Card, Timeline, Statistic, Button } from 'antd';
-import { 
-  TrophyOutlined, 
-  TeamOutlined, 
-  HeartOutlined,
-  StarOutlined,
-  ClockCircleOutlined,
-  EnvironmentOutlined
-} from '@ant-design/icons';
+import { Row, Col, Timeline, Statistic, Button, Card } from 'antd';
+import { TeamOutlined, HeartOutlined, TrophyOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
+
+const values = [
+  {
+    icon: <TrophyOutlined className="text-4xl text-primary-600" />,
+    title: 'Chất lượng',
+    description: 'Cam kết mang đến chất lượng dịch vụ tốt nhất cho khách hàng'
+  },
+  {
+    icon: <HeartOutlined className="text-4xl text-primary-600" />,
+    title: 'Tận tâm',
+    description: 'Phục vụ khách hàng với sự tận tâm và chu đáo nhất'
+  },
+  {
+    icon: <TeamOutlined className="text-4xl text-primary-600" />,
+    title: 'Đoàn kết',
+    description: 'Xây dựng môi trường làm việc đoàn kết, chuyên nghiệp'
+  },
+  {
+    icon: <TrophyOutlined className="text-4xl text-primary-600" />,
+    title: 'Sáng tạo',
+    description: 'Không ngừng sáng tạo và cải tiến dịch vụ'
+  }
+];
 
 const AboutPage: React.FC = () => {
   const milestones = [
@@ -36,29 +51,6 @@ const AboutPage: React.FC = () => {
       year: '2024',
       title: 'Hiện tại',
       description: 'Trở thành một trong những cửa hàng bi-a hàng đầu Việt Nam'
-    }
-  ];
-
-  const values = [
-    {
-      icon: <TrophyOutlined className="text-4xl text-primary-600" />,
-      title: 'Chất lượng',
-      description: 'Cam kết mang đến chất lượng dịch vụ tốt nhất cho khách hàng'
-    },
-    {
-      icon: <HeartOutlined className="text-4xl text-primary-600" />,
-      title: 'Tận tâm',
-      description: 'Phục vụ khách hàng với sự tận tâm và chu đáo nhất'
-    },
-    {
-      icon: <TeamOutlined className="text-4xl text-primary-600" />,
-      title: 'Đoàn kết',
-      description: 'Xây dựng môi trường làm việc đoàn kết, chuyên nghiệp'
-    },
-    {
-      icon: <StarOutlined className="text-4xl text-primary-600" />,
-      title: 'Sáng tạo',
-      description: 'Không ngừng sáng tạo và cải tiến dịch vụ'
     }
   ];
 
@@ -189,7 +181,7 @@ const AboutPage: React.FC = () => {
               >
                 <Card className="shadow-lg">
                   <Timeline
-                    items={milestones.map((milestone, index) => ({
+                    items={milestones.map((milestone) => ({
                       children: (
                         <div>
                           <h4 className="font-semibold text-secondary-800">
@@ -226,12 +218,12 @@ const AboutPage: React.FC = () => {
           </motion.div>
 
           <Row gutter={[32, 32]}>
-            {values.map((value, index) => (
-              <Col xs={24} md={12} lg={6} key={index}>
+            {values.map((value) => (
+              <Col xs={24} md={12} lg={6} key={value.title}>
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
                 >
                   <Card className="h-full text-center hover:shadow-lg transition-shadow duration-300">

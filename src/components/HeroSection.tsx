@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const HeroSection: React.FC = () => {
   return (
-    <section id="home" className="position-relative min-vh-100 d-flex align-items-center justify-content-center overflow-hidden bg-primary text-white" style={{background: 'linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%)'}}>
+    <section id="home" className="position-relative min-vh-100 d-flex align-items-center justify-content-center overflow-hidden bg-primary text-white" style={{background: 'linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%)', paddingTop: '80px'}}>
       {/* Overlay */}
       <div className="position-absolute top-0 start-0 w-100 h-100" style={{background: 'rgba(0,0,0,0.4)', zIndex: 1}}></div>
       {/* Content */}

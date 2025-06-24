@@ -1,4 +1,3 @@
-import React from 'react';
 import { ConfigProvider } from 'antd';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';

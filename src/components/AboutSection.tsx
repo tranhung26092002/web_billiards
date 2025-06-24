@@ -1,5 +1,4 @@
-import React from 'react';
-import { Row, Col, Card, Tag } from 'antd';
+import { Row, Col, Tag } from 'antd';
 import { TrophyOutlined, SafetyCertificateOutlined, TeamOutlined, HeartOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 

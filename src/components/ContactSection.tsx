@@ -13,12 +13,12 @@ const { TextArea } = Input;
 const ContactSection: React.FC = () => {
   const [form] = Form.useForm();
 
-  const onFinish = (values: any) => {
+  const onFinish = () => {
     message.success('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất.');
     form.resetFields();
   };
 
-  const validatePhone = (_: any, value: string) => {
+  const validatePhone = (_: unknown, value: string) => {
     if (!value) return Promise.reject('Vui lòng nhập số điện thoại!');
     if (!/^0\d{9,10}$/.test(value)) return Promise.reject('Số điện thoại không hợp lệ!');
     return Promise.resolve();

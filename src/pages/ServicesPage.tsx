@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Card, Button, Tag, List, Divider } from 'antd';
+import { Row, Col, Card, Button, Tag, List } from 'antd';
 import { 
   TrophyOutlined, 
   TeamOutlined, 
@@ -7,9 +7,7 @@ import {
   CoffeeOutlined,
   GiftOutlined,
   StarOutlined,
-  CheckCircleOutlined,
-  ClockCircleOutlined,
-  DollarOutlined
+  CheckCircleOutlined
 } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 

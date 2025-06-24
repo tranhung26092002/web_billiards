@@ -59,14 +59,15 @@ const Header: React.FC = () => {
       <div className="container-custom py-2">
         <div className="d-flex align-items-center justify-content-between flex-wrap gap-2">
           {/* Logo + Info */}
-          <a className="d-flex align-items-center text-decoration-none me-3" href="#home">
+          <a className="d-flex align-items-center text-decoration-none me-3 flex-grow-1 flex-md-grow-0 justify-content-center justify-content-md-start" href="#home">
             <div className="position-relative me-3">
               <img
                 src={logo}
                 alt="logo"
-                style={{ width: 80, height: 80, objectFit: 'cover', borderRadius: '50%', border: '4px solid #0ea5e9', boxShadow: '0 0 0 6px #e0f2fe' }}
+                style={{ width: 56, height: 56, objectFit: 'cover', borderRadius: '50%', border: '3px solid #0ea5e9', boxShadow: '0 0 0 4px #e0f2fe' }}
+                className="d-block d-md-inline-block"
               />
-              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info shadow" style={{fontSize: 12, padding: '3px 8px'}}>OPEN</span>
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info shadow" style={{fontSize: 10, padding: '2px 6px'}}>OPEN</span>
             </div>
             <div className="d-none d-md-block">
               <span className="fw-bold fs-2 text-dark" style={{letterSpacing: 1}}>Dũng DT Billards</span>
