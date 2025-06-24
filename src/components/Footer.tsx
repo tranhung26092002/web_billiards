@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="mb-2">
                 <MailOutlined className="me-2 text-info" />
-                anhthathinh2310@gmail.com
+                thanhthathinh2310@gmail.com
               </div>
               <div className="mt-3">
                 {socialLinks.map((social, idx) => (

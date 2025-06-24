@@ -75,6 +75,17 @@ const Header: React.FC = () => {
                 <EnvironmentOutlined className="me-1" />Tầng 3 số nhà 21 đường Phương Canh, Xuân Phương, Nam Từ Liêm, Hà Nội
               </div>
             </div>
+            {/* Thông tin liên hệ bên phải logo, chỉ hiện trên desktop */}
+            <div className="d-none d-lg-flex flex-column align-items-start ms-5">
+              <span className="d-flex align-items-center mb-1">
+                <PhoneOutlined className="me-2 text-info" />
+                <span className="fw-semibold text-dark">0866881091</span>
+              </span>
+              <span className="d-flex align-items-center">
+                <MailOutlined className="me-2 text-info" />
+                <span className="fw-semibold text-dark">thanhthathinh2310@gmail.com</span>
+              </span>
+            </div>
           </a>
           {/* Navbar desktop */}
           <nav className="d-none d-lg-flex flex-grow-1 justify-content-center align-items-center">
