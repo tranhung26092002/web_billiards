@@ -9,7 +9,7 @@ COPY package.json ./
 COPY package-lock.json ./
 
 # Cài đặt các phụ thuộc
-RUN npm install --only=production
+RUN npm install
 
 # Sao chép toàn bộ mã nguồn vào container
 COPY . .
