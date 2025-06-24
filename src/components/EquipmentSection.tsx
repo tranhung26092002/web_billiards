@@ -1,6 +1,5 @@
 import { Row, Col, Card, Button, Tag, Progress } from 'antd';
 import { 
-  TrophyOutlined, 
   StarOutlined, 
   CheckCircleOutlined,
   ShoppingCartOutlined
